@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        
+        
+        <meta charset="utf-8">
+        <title>Proyecto de base de datos 2 con ajax</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/mis-estilos.css"/>  <!Linkeamos archivo de css mis-estilos-->
+        
+        
+        
+        <script src="jquery-1.6.4.min.js" ></script>  <!Diseño Visual-->
+        
+        
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">INICIO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">ALMACÉN <span class="sr-only">(current)</span></a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#">CLIENTES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">VENDEDOR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">VENTAS</a>
+      </li>
+    </ul>
+     <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="BUSCAR" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #ffffff;">BUSCAR</button>
+    </form>
+  </div>
+</nav>
+        
+        <script src="js/bootstrap.js"></script>    <!Acciones-->
+        
+        
+        
+    </head>
+    <body>
+        <h1>Proyecto de base de datos II</h1>
+        <!--  vamos a generar l vista de la autenticacion -->
+        <div id="ventana-autenticar">
+        
+            <input type="text" id="usuario" placeholder="Tu Usuario"   >
+            <input type="password" id="password" placeholder="Tu password">
+            <button class="btn btn-outline-danger" id="ingresar"> Ingresar </button>
+            
+            <div id="respuesta">
+                
+            </div>
+        </div>
+        
+            <div id="bienvenido">
+                
+                <p> Aqui va interfaz </p>
+                <h3> Guardar un almacén </h3>
+                <input type="text" id="numero_almacen" placeholder="número de almacén"/><br><br>
+                <input type="text" id="ubicacion_almacen" placeholder="ubicación de almacén"/><br><br>
+                <button class="btn btn-dark" id="guardar_almacen">Guardar Almacén</button>
+                <div id="resultado_guardar"></div>
+                
+                <table class="table table-dark table-striped">
+                    <thead>
+                    
+                        <tr>
+                            <th> Numero de almacen </th>
+                            <th> Ubicacion de almacen </th>
+                        </tr>
+                    </thead>
+                    
+                </table>
+                
+                
+                <div id="bienvenidoo">
+                
+                <p> Aqui va interfagggz </p>
+                <h3> Buscar almacén </h3>
+                <input type="text" id="numero_almacen" placeholder="número de almacén"/><br><br>
+                <input type="text" id="ubicacion_almacen" placeholder="ubicación de almacén"/><br><br>
+                <button class="btn btn-dark" id="buscar-id">Guardar Almacén</button>
+                <div id="resultado_guardar"></div>
+                
+             </div>
+                
+                
+             </div>
+        
+        
+        
+        
+        
+        <script src="js/autenticarse.js"></script>
+        <script src="js/almacen.js"> </script>
+    </body>
+</html>

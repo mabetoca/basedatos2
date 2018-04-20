@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/mis-estilos.css"/>  <!Linkeamos archivo de css mis-estilos-->
+
+
+
+    <script src="js/jquery.min.js" ></script>  <!Diseño Visual-->
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">Buscar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Buscar por id</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active container" id="home">
+            <h2>Operaciones con almacen</h2>
+
+            <table id="tablita" class="table table-dark table-striped">
+                <thead>
+
+                    <tr>
+                        <th> Numero de almacen </th>
+                        <th> Ubicacion de almacen </th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+        
+        <!https://getbootstrap.com/docs/4.1/components/navs/-->
+        
+        <div class="tab-pane container" id="menu1">
+            <h2>Buscar por id</h2>
+            <input type="text" id="id_almacen" placeholder="numero de Almacen">
+            <button id="buscar_por_id" class="btn btn-info">Buscar por id</button>
+
+            <table id="tablita-porid" class="table table-dark table-striped">
+                <thead>
+
+                    <tr>
+                        <th> Numero de almacen </th>
+                        <th> Ubicacion de almacen </th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+        <div class="tab-pane container" id="menu2">...</div>
+    </div>      
+
+    
+
+
+
+
+
+    <script src="js/tabla-almacen.js"></script>
+</body>
+</html>
